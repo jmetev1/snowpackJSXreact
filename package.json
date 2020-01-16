@@ -1,0 +1,26 @@
+{
+  "name": "snow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run compile & servor . index.html 8080 --reload --browse",
+    "compile": "babel src --out-dir public/ --watch --presets @babel/preset-react --plugins @babel/plugin-syntax-dynamic-import",
+    "prepare": "snowpack",
+    "cleanStart": "rm -rf node_modules && rm -rf web_modules && npm i && npm run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.8.3",
+    "react": "npm:@reactesm/react@^0.1.0",
+    "react-dom": "npm:@reactesm/react-dom@^0.1.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/preset-react": "^7.6.3",
+    "servor": "^3.0.8",
+    "snowpack": "^1.0.5"
+  }
+}
