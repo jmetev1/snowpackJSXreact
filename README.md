@@ -14,7 +14,14 @@ It's got:
 2. Practically instant reload (on my 2015 Macbook anyway ). Sure babel has to run, but only on the one file you changed.
 3. Material-UI! because who wants to make their own Selects?
 
+firstime:
+
 ```bash
-npm install
-npm cleanStart
+npm run cleanStart
+```
+
+after:
+
+```bash
+npm run dev
 ```
